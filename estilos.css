@@ -1,0 +1,9 @@
+/*si use id en HTML entonces a qui uso #*/
+
+#cuerpo{
+    background-color: pink;
+}
+
+#round {
+    position: relative;
+  }

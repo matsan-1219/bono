@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>bono</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+  <body id="cuerpo">
+    <div class="container">
+        <div class="row"> 
+            <div class="col col-sm-5">
+                <div class="container center-h center-v">
+                    <div class="child">
+                        <div class="container">
+                            <div class="row">
+                              <div class="col">
+                        
+                                <!-- inicio: construccion de la card -->
+                                <div class="card bg-light mb-5">
+                                  <div class="card-header">
+                                    <i class="fab fa-battle-net mr-3" style="font-size: 20;"> <strong>DATOS DEL EMPLEADO</strong> 
+                                  </div>
+                                  <div class="card-body">
+                                        <!-- agregamos un div para presentar el contenido de la tabla: lo importante de este es el ID -->
+                                        <label for="Sueldo"><h2>Sueldo</h2></label>
+                                        <input type="text" class="form-control" id="sueldo">
+                                        <hr>
+                                        <label for="edad"><h2>edad</h2></label>
+                                        <input type="text" class="form-control" id="edad">
+                                        <hr>
+                                        <h2>nacionalidad</h2>
+                                        <select name="nacionalidad" id="nacionalidad">
+                                            <option value="1">Nacional</option>
+                                            <option value="2">Extranjero</option>
+                                            </select>
+                                        <hr>
+                        
+                                        <h2>Sexo</h2><select name="sexo" id="sexo"> 
+                                          <option>Seleccionar</option>
+                                            <option value="1">Masculino</option>
+                                            <option value="2">Femenino</option></select>
+                                        <hr>
+                                    
+                                    </div>  
+                                </div>     
+                                
+                                   <!-- inicio: construccion de la card -->
+                                   <div class="card bg-light mb-5">
+                                    <div class="card-header">
+                                      <i class="fab fa-battle-net mr-3" style="font-size: 20;"> <strong>CURSO</strong> 
+                                    </div>
+                                    <div class="card-body">
+                                          <!-- agregamos un div para presentar el contenido de la tabla: lo importante de este es el ID -->
+                                        <label> 
+                                        <input type="checkbox" id="cbox1" value="first_checkbox">PHP</label>
+                                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">ASP.Net</label><br>
+                                        <input type="checkbox" id="cbox3" value="first_checkbox"> VB.Net</label>
+                                        <input type="checkbox" id="cbox4" value="second_checkbox"> <label for="cbox3">Java</label><br>
+                                        <input type="checkbox" id="cbox5" value="first_checkbox"> Oracle</label>
+                                        <input type="checkbox" id="cbox6" value="second_checkbox"> <label for="cbox4">introduccion a BD</label>
+                                          <hr>
+                                      </div>  
+                                  </div>      
+                                   <!-- inicio: construccion de la card -->
+                                   <div class="card bg-light mb-5">
+                                    <div class="card-header">
+                                      <i class="fab fa-battle-net mr-3" style="font-size: 20;"> <strong>ANTIGUEDAD</strong> 
+                                    </div>
+                                   
+                                          <!-- agregamos un div para presentar el contenido de la tabla: lo importante de este es el ID -->
+ 
+                                        <input type="radio" id="antiguedad1" name="antiguedad" >
+                                        <label for="antiguedad"> 1 a 5 años</label><br>
+                                        <input type="radio" id="antigu2" name="antigu2">
+                                        <label for="antiguedad2">6 a 10 años</label><br>
+                                        <input type="radio" id="antigu3" name="antiguedad" >
+                                        <label for="antiguedad3">mas de 10</label>
+                                                
+                                    
+                                              <div class="col-sm-7">
+                                                <button type="submit"class="btn btn-danger btn-block" onclick="Calcular()">sueldo</button>
+                                                <br>
+                                                
+                                                <br>
+                                                <button type="submit"class="btn btn-danger btn-block"onclick="Nuevo()">NUEVO CALCULO</button>
+                                                <br>
+                                                <label for=""><h1>resultado</h1></label>
+                                                <input type="text" class="form-control" id="bono" readonly>
+                                                <br>
+                                                
+                                        </div>
+                                      
+                              
+
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                   
+                
+              
+    
+                      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="bono.js"></script>
+</body>
+</html>
